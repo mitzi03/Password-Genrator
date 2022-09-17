@@ -4,8 +4,19 @@ var generateBtn = document.querySelector("#generate");
 function writePassword() { 
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
+
+function generatePassword() 
+    var chars = "0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()_+-=ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    var passwordLength= 128;
+    var passwords="";
+  
+    for( var i = 0 ; i<= passwordLength ; i++) {
+      var password = Math.floor(Math.random() * chars.length);
+      passwords += chars.substring(randomnumber,randomnumber +1);
+    return password
+    }
 }
- 
+  
 passwordText.value = password
 
 
